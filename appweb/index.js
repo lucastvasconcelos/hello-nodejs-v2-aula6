@@ -17,7 +17,9 @@ app.post("/dosave", (req,res) => {
 app.post("/adivinha",(req,res) =>{
  	console.log("numero: ");
  	console.log(req.body.numero);
- 	res.send(`<h1> ${req.body.numero} </h1>`)
+ 	res.send(`<h1> ${req.body.numero} </h1>
+	<a href="numero.html"> voltar </a>
+`)
 });
 
 app.listen(3005);
